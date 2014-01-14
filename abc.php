@@ -1,5 +1,5 @@
 <?php
-echo phpinfo();exit;
+echo phpinfo();exit;dd
 function CallAPI($method, $url, $data)
 {
 
@@ -36,7 +36,7 @@ $data = array("key"=>"48f3e148b8181df4e4a62de977325157",
 	      "first_name"=>"John",
 	      "last_name"=>"SMith",
 	      "email"=>"jsmith@example.org",
-	      "contact_type"=>"Individual"	
+	      "contact_type"=>"Individual"
 	      );
 $result = CallAPI("POST","http://localhost/drupal/sites/all/modules/civicrm/extern/rest.php",$data);
 echo "<pre>";print_r($result);exit;
